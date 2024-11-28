@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "codesearch"
+version = "0.1.0"
+authors = [
+  { name="Ajitesh", email="ajiteshleo@gmail.com" },
+]
+description = "A fast code search tool using Tantivy"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "tantivy",
+    "loguru",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/codesearch"
+"Bug Tracker" = "https://github.com/yourusername/codesearch/issues"
+
+[project.scripts]
+codesearch = "codesearch.cli:main" 
